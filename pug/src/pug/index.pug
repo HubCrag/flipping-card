@@ -1,0 +1,64 @@
+extends /_includes/layout
+
+block title
+    title Hubcrag | Demo
+
+block content
+
+    .card
+        .card-back
+            .line-numbers
+                each val in [1, 2, 3, 4, 5, 6, 7, 8, 9]
+                    div= val
+            code
+                span.variable const 
+                span.function aboutMe 
+                span.operator = 
+                span {
+                .indent 
+                    span.property name
+                    span.operator : 
+                    span.string 'HubCrag'
+                    span ,
+                
+                .indent 
+                    span.property title
+                    span.operator : 
+                    span.string 'Frontend, UI/UX Developer'
+                    span ,
+                .indent 
+                    span.property contact
+                    span.operator : 
+                    span {
+                    .indent 
+                        span.property email
+                        span.operator : 
+                        span.string 'hi@hubcrag.com'
+                        span ,
+                    .indent
+                        span.property website
+                        span.operator :
+                        span.string 'hubcrag.com'
+                    span }
+                span }
+        .card-front
+            .line-numbers
+                each val in [1, 2, 3, 4, 5, 6, 7, 8, 9]
+                    div= val
+            code
+                span.variable this
+                span .
+                span.method addEventListener
+                span (
+                span.string 'mouseover'
+                span , 
+                span.function () => 
+                span { 
+                .indent
+                    span.variable this
+                    span .
+                    span.property flipCard 
+                    span = 
+                    span.boolean true
+                    span ;
+                span });

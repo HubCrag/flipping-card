@@ -1,0 +1,8 @@
+html/build
+pug/build
+
+html/node_modules
+pug/node_modules
+
+html/package-lock.json
+pug/package-lock.json
