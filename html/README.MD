@@ -1,7 +1,6 @@
 ## Hubcrag Flipping Card
 
-### Frontend dependencies
-
+### [Watch it on youtube](https://youtu.be/rndhhy5g2Vo)
 
 ### Setup demo project
 
